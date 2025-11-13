@@ -1,7 +1,7 @@
 USE [MyDatabase]
 GO
 
-/****** Object:  Table [dbo].[persons]    Script Date: 11-11-2025 14:58:11 ******/
+/****** Object:  Table [dbo].[persons]    Script Date: 13-11-2025 14:58:11 ******/
 SET ANSI_NULLS ON
 GO
 
