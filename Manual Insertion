@@ -1,0 +1,12 @@
+/*Manual inserting values into the persons
+Tip: Make sure the data you're inserting matches the field */
+
+INSERT INTO CUSTOMERS (id, first_name, country, score)
+VALUES (6, 'Zensation', 'New Zealand', NULL),
+       (7, 'Chandra', NULL, 100)
+
+/* Above query returns that the rows have been affected, 
+To see the changes:
+SELECT *
+FROM CUSTOMERS 
+*/
