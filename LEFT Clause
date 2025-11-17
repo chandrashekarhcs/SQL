@@ -1,0 +1,12 @@
+/*
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+*/
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY, 1) IN('a', 'e', 'i', 'o', 'u')
+
+/* Explanation:
+SUBSTRING(CITY, 1) = Get first character (start at position 1, take 1 character)
+LEFT(CITY, 1) = Get leftmost 1 character
+IN ('A', 'E', 'I', 'O', 'U') = Check if it's one of these vowels */  
