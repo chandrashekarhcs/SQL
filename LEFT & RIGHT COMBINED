@@ -1,0 +1,18 @@
+/*Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) 
+as both their first and last characters. Your result cannot contain duplicates. */
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY, 1) IN('a', 'e', 'i', 'o', 'u') AND 
+RIGHT(CITY, 1) IN('a', 'e', 'i', 'o', 'u') ;
+
+
+
+
+/* Explanation: 
+SELECT DISTINCT CITY → Get city names without duplicates ✓
+LEFT(CITY, 1) → Gets the first character of the city name ✓
+IN('a', 'e', 'i', 'o', 'u') → Checks if it's a vowel ✓
+AND → BOTH conditions must be true ✓
+RIGHT(CITY, 1) → Gets the last character of the city name ✓
+IN('a', 'e', 'i', 'o', 'u') → Checks if it's a vowel ✓ */ 
