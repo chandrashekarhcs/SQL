@@ -10,3 +10,6 @@ To see the changes:
 SELECT *
 FROM CUSTOMERS 
 */
+
+/* You can not skip inserting values in PK section
+like 'id', because it will show an error.*/
