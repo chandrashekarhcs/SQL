@@ -1,0 +1,12 @@
+/*
+Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+*/
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE RIGHT(CITY, 1) IN('a', 'e', 'i', 'o', 'u')
+
+/* Explanation:
+SUBSTRING(CITY, 1) = Get Last character (start at position 1, take 1 character)
+LEFT(CITY, 1) = Get rightmost 1 character
+IN ('A', 'E', 'I', 'O', 'U') = Check if it's one of these vowels */ 
